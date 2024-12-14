@@ -154,8 +154,8 @@ const personnels = [
     isLead: false,
   },
 ];
-const Personnel = require("../models/personnel.model");
-const Department = require("../models/department.model");
+const Personnel = require("../models/personnel");
+const Department = require("../models/department");
 const { mongoose } = require("../configs/dbConnection");
 
 async function dataCreate() {
