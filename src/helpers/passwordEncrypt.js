@@ -1,8 +1,4 @@
 "use strict"
-/* -------------------------------------------------------
-    EXPRESS - Personnel API
-------------------------------------------------------- */
-// passwordEncrypt():
 
 const crypto = require('node:crypto'),
     keyCode = process.env.SECRET_KEY,

@@ -1,7 +1,5 @@
 'use strict'
 
-//^ hangi kullaniciya hangi yetkileri verecegiz ne yapabilecekler
-// personnel model inden bakip bunlari yapacagiz 
 
 module.exports = {
 

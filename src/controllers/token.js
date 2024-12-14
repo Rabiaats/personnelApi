@@ -49,7 +49,6 @@ module.exports = {
             error: false,
             data,
             new: await Token.findOne({_id: req.params.id})
-            //! updateOne metodu bize guncelledigi veriyi dondurmez. Baska detaylar verir, update ettigim methodu gormek icin tekrar findOne ile bulup getiriyoruz
         })
     },
 

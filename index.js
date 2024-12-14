@@ -37,11 +37,10 @@ const swaggerJson = require('./swagger.json')
 app.use('/documents/swagger', swaggerUi.serve, swaggerUi.setup(swaggerJson, { swaggerOptions: { persistAuthorization: true } }))
 
 //* REDOC
-const redoc = require('redoc-express')
-app.use('/documents/redoc', redoc({ specUrl: '/documents/json', title: 'Redoc UI' }))
+// const redoc = require('redoc-express')
+// app.use('/documents/redoc', redoc({ specUrl: '/documents/json', title: 'Redoc UI' }))
 
 
-/* ------------------------------------------------------- */
 //db connection
 dbConnection();
 
@@ -70,7 +69,6 @@ app.all("/", (req, res) => {
     document: {
       json: 'https://personnelapi-irkn.onrender.com/documents/json',
       swagger: 'https://personnelapi-irkn.onrender.com/documents/swagger/',
-      redoc: 'https://personnelapi-irkn.onrender.com/documents/redoc'
     },
     session: req.session,
   });
@@ -94,7 +92,7 @@ app.listen(PORT, () => console.log("http://127.0.0.1:" + PORT));
 
 /* ------------------------------------------------------- */
 // Syncronization (must be in commentLine):
-require('./src/helpers/sync')()
+// require('./src/helpers/sync')()
 
 if (process.env.NODE_ENV == "development") {
   return;

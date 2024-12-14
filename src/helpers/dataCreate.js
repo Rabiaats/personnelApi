@@ -178,12 +178,6 @@ async function dataCreate() {
     isAdmin: true,
     isLead: false,
   });
-  // let isFirstAccount = (await Personnel.countDocuments()) === 0;
-  // for (const personnel of personnels) {
-  //   personnel.isAdmin = isFirstAccount ? true : false;
-  //   isFirstAccount = false;
-  //   await Personnel.create(personnel);
-  // }
   let updatedPersonnels = [];
 
   updatedPersonnels = personnels.map((personnel) => ({

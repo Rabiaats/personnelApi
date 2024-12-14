@@ -1,8 +1,4 @@
 "use strict";
-/* -------------------------------------------------------
-    EXPRESS - Personnel API
-------------------------------------------------------- */
-// app.use(findSearchSortPage):
 
 module.exports = (req, res, next) => {
   // Searching & Sorting & Pagination:

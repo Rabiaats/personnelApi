@@ -1,8 +1,4 @@
 "use strict"
-/* -------------------------------------------------------
-    EXPRESS - Personnel API
-------------------------------------------------------- */
-// MongoDB Connection:
 
 const mongoose = require('mongoose')
 

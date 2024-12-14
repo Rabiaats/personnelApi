@@ -1,11 +1,9 @@
 "use strict";
-/* -------------------------------------------------------
-    EXPRESS - Personnel API
-------------------------------------------------------- */
+
+
 const { mongoose } = require("../configs/dbConnection");
 /* ------------------------------------------------------- */
 const passwordEncrypt = require("../helpers/passwordEncrypt");
-// const uniqueValidator = require("mongoose-unique-validator");
 
 const PersonnelSchema = new mongoose.Schema(
   {

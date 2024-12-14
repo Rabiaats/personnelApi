@@ -1,8 +1,4 @@
 "use strict"
-/* -------------------------------------------------------
-    EXPRESS - Personnel API
-------------------------------------------------------- */
-// SYCHRONIZATION:
 
 module.exports = async function() {
 
