@@ -131,6 +131,11 @@ app.all("/", (req, res) => {
   res.send({
     error: false,
     message: "Welcome to PERSONNEL API",
+    document: {
+      json: 'https://personnelapi-irkn.onrender.com/documents/json',
+      swagger: 'https://personnelapi-irkn.onrender.com/documents/swagger/',
+      redoc: 'https://personnelapi-irkn.onrender.com/documents/redoc'
+    },
     session: req.session,
   });
 });
